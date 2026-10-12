@@ -155,6 +155,12 @@ python -m pytest tests
 
 The delta writer refuses to start with less than 10 GB free, even for tiny test models. If your temp drive is short on space, point pytest elsewhere: `python -m pytest tests --basetemp=<dir on a drive with space>`.
 
+## License
+
+The code in this repository is released under the [Apache License 2.0](LICENSE). Copyright 2026 ArcOpening.
+
+The license covers the code only. Models built with this tool are derivatives of their base and donor models: they are governed by the [Llama 3.3 Community License](https://www.llama.com/llama3_3/license/) and by the licenses of every donor model used.
+
 ## Limitations
 
 - Weight-space geometry does not measure writing quality, safety, or style; every merge still needs to be tested by generating text.
