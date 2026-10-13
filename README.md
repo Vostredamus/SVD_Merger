@@ -1,4 +1,6 @@
 # LLM Traits
+You want to merge models, but you want each model special character to add to it without diluting them? Can we extract separate knwoledge or specialization that has been trained into the model somehow? This is a proposition to do that.
+First, we measure how weights shifted from the base model by the fine-tuning process. Then, we compare that shift to that of multiple other models. Finally, we can look if these changes can be combined and generate recipes that can be used for guided merging of models.
 
 **Measure how fine-tuned models differ from their common base, then merge them on purpose.**
 
